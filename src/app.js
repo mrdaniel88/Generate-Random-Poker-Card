@@ -1,4 +1,4 @@
-/* eslint-disable */
+// /* eslint-disable */
 import "bootstrap";
 import "./style.css";
 
@@ -9,17 +9,18 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
   generateNumber();
+  randomSymbol();
 };
 
-function randomNumber() {
-  let random = Math.floor(Math.random() * 13) + 1;
+function randomNumber(min, max) {
+  let random = Math.floor(Math.random() * (max - min)) + min;
   console.log(random);
   return random;
 }
 
 function generateNumber() {
   let number = document.getElementById("number");
-  let createdNumber = randomNumber();
+  let createdNumber = randomNumber(1, 13);
   if (createdNumber == 1) {
     createdNumber = "A";
     number.innerHTML = createdNumber;
@@ -35,8 +36,37 @@ function generateNumber() {
   } else {
     number.innerHTML = createdNumber;
   }
-
   console.log(createdNumber);
+}
+
+function randomSymbol() {
+  let symbol = document.getElementById("symbol");
+  let symbolReversed = document.getElementById("symbol-reversed");
+  let randomSymbol = randomNumber(1, 4);
+  if (randomSymbol == 1) {
+    randomSymbol = "♠";
+    symbol.innerHTML = randomSymbol;
+    symbolReversed.innerHTML = randomSymbol;
+  }
+  if (randomSymbol == 2) {
+    randomSymbol = "♣";
+    symbol.innerHTML = randomSymbol;
+    symbolReversed.innerHTML = randomSymbol;
+  }
+  if (randomSymbol == 3) {
+    randomSymbol = "♥";
+    symbol.style.color = "red";
+    symbolReversed.style.color = "red";
+    symbol.innerHTML = randomSymbol;
+    symbolReversed.innerHTML = randomSymbol;
+  }
+  if (randomSymbol == 4) {
+    randomSymbol = "♦";
+    symbol.style.color = "red";
+    symbolReversed.style.color = "red";
+    symbol.innerHTML = randomSymbol;
+    symbolReversed.innerHTML = randomSymbol;
+  }
 }
 
 // function numberGenerator() {
