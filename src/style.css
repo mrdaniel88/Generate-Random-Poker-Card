@@ -29,6 +29,7 @@ body {
   text-align: center;
   margin-top: 45%;
   font-size: 85px;
+  font-weight: bold;
 }
 
 #symbol-reversed {
@@ -45,4 +46,5 @@ button {
   background-color: rgb(86, 180, 218);
   color: whitesmoke;
   border-radius: 5px;
+  font-weight: bold;
 }
