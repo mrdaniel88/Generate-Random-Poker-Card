@@ -1,1 +1,39 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  height: 100%;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  margin-top: 5%;
+}
+
+#symbol {
+  position: absolute;
+  margin-left: 20px;
+  font-size: 50px;
+}
+
+#number {
+  /* position: absolute;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  margin-top: 45%;
+  font-size: 85px;
+}
+
+#symbol-reversed {
+  position: absolute;
+  margin-right: 20px;
+  margin-bottom: auto;
+  bottom: 0;
+  right: 0;
+  font-size: 50px;
+}
