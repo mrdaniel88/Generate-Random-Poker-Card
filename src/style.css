@@ -6,12 +6,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
 }
 
 .card {
   width: 200px;
   height: 300px;
   margin-top: 5%;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+  border-radius: 15px;
 }
 
 #symbol {
@@ -21,9 +26,6 @@ body {
 }
 
 #number {
-  /* position: absolute;
-  align-items: center;
-  justify-content: center; */
   text-align: center;
   margin-top: 45%;
   font-size: 85px;
@@ -37,4 +39,10 @@ body {
   right: 0;
   font-size: 50px;
   transform: rotateX(180deg);
+}
+
+button {
+  background-color: rgb(86, 180, 218);
+  color: whitesmoke;
+  border-radius: 5px;
 }
