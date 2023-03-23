@@ -32,18 +32,22 @@ function generateNumber() {
   if (createdNumber == 1) {
     createdNumber = "A";
     number.innerHTML = createdNumber;
-  } else if (createdNumber == 11) {
+  }
+  if (createdNumber == 11) {
     createdNumber = "J";
     number.innerHTML = createdNumber;
-  } else if (createdNumber == 12) {
+  }
+  if (createdNumber == 12) {
     createdNumber = "Q";
     number.innerHTML = createdNumber;
-  } else if (createdNumber == 13) {
+  }
+  if (createdNumber == 13) {
     createdNumber = "K";
     number.innerHTML = createdNumber;
-  } else {
-    number.innerHTML = createdNumber;
   }
+
+  number.innerHTML = createdNumber;
+
   //console.log(createdNumber);
 }
 
